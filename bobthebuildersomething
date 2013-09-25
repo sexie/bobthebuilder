@@ -1,0 +1,22 @@
+#include <Servo.h>
+
+Servo bobthebuilder;
+
+void setup()
+{
+ 
+ bobthebuilder.attach(10); 
+}
+
+void loop()
+{
+  
+    for( int angle = 0; angle < 120 ; angle++)
+    {
+   
+    
+bobthebuilder.write(angle);
+delay(10);
+    }
+    
+}
